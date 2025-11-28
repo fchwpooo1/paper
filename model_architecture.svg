@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 800" width="1400" height="800">
+  <defs>
+    <!-- Arrow marker definitions -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+    <marker id="arrowhead-blue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4a90d9"/>
+    </marker>
+    <marker id="arrowhead-green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#5cb85c"/>
+    </marker>
+    <marker id="arrowhead-purple" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#9b59b6"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1400" height="800" fill="#fff"/>
+  
+  <!-- ==================== LEFT COLUMN: Input Domains ==================== -->
+  
+  <!-- Source Domain Block -->
+  <rect x="20" y="50" width="180" height="180" rx="8" fill="#e8f4e8" stroke="#5cb85c" stroke-width="2"/>
+  <text x="110" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">Source Domain</text>
+  
+  <!-- Source Domain sample images -->
+  <rect x="35" y="95" width="60" height="50" fill="#d4edda" stroke="#888" stroke-width="1"/>
+  <text x="65" y="160" text-anchor="middle" font-family="Times New Roman, serif" font-size="12" font-style="italic" fill="#333">X<tspan baseline-shift="super" font-size="9">s</tspan><tspan baseline-shift="sub" font-size="9">1</tspan></text>
+  
+  <rect x="125" y="95" width="60" height="50" fill="#d4edda" stroke="#888" stroke-width="1"/>
+  <text x="155" y="160" text-anchor="middle" font-family="Times New Roman, serif" font-size="12" font-style="italic" fill="#333">X<tspan baseline-shift="super" font-size="9">s</tspan><tspan baseline-shift="sub" font-size="9">2</tspan></text>
+  
+  <!-- Difference indicator for source -->
+  <text x="100" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#666">Difference</text>
+  
+  <!-- Target Domain Block -->
+  <rect x="20" y="570" width="180" height="180" rx="8" fill="#e3f2fd" stroke="#4a90d9" stroke-width="2"/>
+  <text x="110" y="595" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">Target Domain</text>
+  
+  <!-- Target Domain sample images -->
+  <rect x="35" y="615" width="60" height="50" fill="#bbdefb" stroke="#888" stroke-width="1"/>
+  <text x="65" y="680" text-anchor="middle" font-family="Times New Roman, serif" font-size="12" font-style="italic" fill="#333">X<tspan baseline-shift="super" font-size="9">t</tspan><tspan baseline-shift="sub" font-size="9">1</tspan></text>
+  
+  <rect x="125" y="615" width="60" height="50" fill="#bbdefb" stroke="#888" stroke-width="1"/>
+  <text x="155" y="680" text-anchor="middle" font-family="Times New Roman, serif" font-size="12" font-style="italic" fill="#333">X<tspan baseline-shift="super" font-size="9">t</tspan><tspan baseline-shift="sub" font-size="9">2</tspan></text>
+  
+  <!-- Difference indicator for target -->
+  <text x="100" y="720" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#666">Difference</text>
+  
+  <!-- ==================== GET DIFFERENCE IMAGES BLOCK ==================== -->
+  
+  <rect x="230" y="320" width="100" height="160" rx="5" fill="#f5f5f5" stroke="#999" stroke-width="2"/>
+  <text x="280" y="385" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#333">Get</text>
+  <text x="280" y="400" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#333">difference</text>
+  <text x="280" y="415" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#333">images</text>
+  
+  <!-- Arrows from domains to difference block -->
+  <path d="M 200 140 L 230 320" stroke="#666" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 200 660 L 230 480" stroke="#666" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- ==================== PARALLEL STREAMS ==================== -->
+  
+  <!-- ===== TOP STREAM (Source) ===== -->
+  
+  <!-- Contrastive Support set (Source) -->
+  <rect x="360" y="80" width="120" height="80" rx="5" fill="#d4edda" stroke="#5cb85c" stroke-width="2"/>
+  <text x="420" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#333">Contrastive</text>
+  <text x="420" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#333">Support set</text>
+  <text x="420" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">(Source)</text>
+  
+  <!-- Query set (Source) -->
+  <rect x="360" y="180" width="120" height="60" rx="5" fill="#c8e6c9" stroke="#5cb85c" stroke-width="2"/>
+  <text x="420" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#333">Query set</text>
+  <text x="420" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">(Source)</text>
+  
+  <!-- Arrow from difference to source stream -->
+  <path d="M 330 360 L 355 150" stroke="#5cb85c" stroke-width="1.5" fill="none" marker-end="url(#arrowhead-green)"/>
+  
+  <!-- ===== BOTTOM STREAM (Target) ===== -->
+  
+  <!-- Contrastive Support set (Target) -->
+  <rect x="360" y="520" width="120" height="80" rx="5" fill="#bbdefb" stroke="#4a90d9" stroke-width="2"/>
+  <text x="420" y="550" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#333">Contrastive</text>
+  <text x="420" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#333">Support set</text>
+  <text x="420" y="585" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">(Target)</text>
+  
+  <!-- Query set (Target) -->
+  <rect x="360" y="620" width="120" height="60" rx="5" fill="#90caf9" stroke="#4a90d9" stroke-width="2"/>
+  <text x="420" y="645" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#333">Query set</text>
+  <text x="420" y="665" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">(Target)</text>
+  
+  <!-- Arrow from difference to target stream -->
+  <path d="M 330 440 L 355 580" stroke="#4a90d9" stroke-width="1.5" fill="none" marker-end="url(#arrowhead-blue)"/>
+  
+  <!-- ==================== FEATURE EXTRACTOR (CNN Stack) ==================== -->
+  
+  <!-- Shared Feature Extractor Block -->
+  <rect x="510" y="300" width="100" height="200" rx="5" fill="#f0e68c" stroke="#d4a500" stroke-width="2"/>
+  <text x="560" y="380" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">Feature</text>
+  <text x="560" y="398" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">Extractor</text>
+  <text x="560" y="420" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">(CNN)</text>
+  
+  <!-- CNN Stack visualization inside -->
+  <rect x="525" y="430" width="70" height="12" fill="#ffc107" stroke="#d4a500" stroke-width="1"/>
+  <rect x="530" y="445" width="60" height="12" fill="#ffc107" stroke="#d4a500" stroke-width="1"/>
+  <rect x="535" y="460" width="50" height="12" fill="#ffc107" stroke="#d4a500" stroke-width="1"/>
+  
+  <!-- Arrows from support/query sets to feature extractor -->
+  <path d="M 480 140 L 510 350" stroke="#5cb85c" stroke-width="1.5" fill="none" marker-end="url(#arrowhead-green)"/>
+  <path d="M 480 210 L 510 380" stroke="#5cb85c" stroke-width="1.5" fill="none" marker-end="url(#arrowhead-green)"/>
+  <path d="M 480 560 L 510 420" stroke="#4a90d9" stroke-width="1.5" fill="none" marker-end="url(#arrowhead-blue)"/>
+  <path d="M 480 650 L 510 450" stroke="#4a90d9" stroke-width="1.5" fill="none" marker-end="url(#arrowhead-blue)"/>
+  
+  <!-- ==================== SOURCE DOMAIN PROCESSING BLOCK ==================== -->
+  
+  <rect x="640" y="50" width="250" height="250" rx="8" fill="#e8f4e8" stroke="#5cb85c" stroke-width="2"/>
+  <text x="765" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">Source domain</text>
+  
+  <!-- Support features (Source) -->
+  <rect x="655" y="90" width="100" height="50" rx="4" fill="#c8e6c9" stroke="#5cb85c" stroke-width="1"/>
+  <text x="705" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#333">Support</text>
+  <text x="705" y="132" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#333">features</text>
+  
+  <!-- Query features (Source) -->
+  <rect x="775" y="90" width="100" height="50" rx="4" fill="#a5d6a7" stroke="#5cb85c" stroke-width="1"/>
+  <text x="825" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#333">Query</text>
+  <text x="825" y="132" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#333">features</text>
+  
+  <!-- INSCL-S Module -->
+  <rect x="670" y="160" width="180" height="110" rx="5" fill="#f5f5f5" stroke="#999" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="760" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#9b59b6">INSCL-S</text>
+  
+  <!-- Pull/Push mechanics (Source) -->
+  <circle cx="710" cy="215" r="8" fill="#9b59b6"/>
+  <circle cx="750" cy="215" r="8" fill="#5cb85c"/>
+  <circle cx="810" cy="215" r="8" fill="#9b59b6"/>
+  
+  <!-- Pull arrows -->
+  <path d="M 718 215 L 742 215" stroke="#5cb85c" stroke-width="1.5" fill="none" marker-end="url(#arrowhead-green)"/>
+  <text x="730" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#5cb85c">Pull</text>
+  
+  <!-- Push arrows -->
+  <path d="M 758 215 L 802 215" stroke="#e74c3c" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="780" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#e74c3c">Push</text>
+  
+  <text x="760" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">(Intra-domain)</text>
+  
+  <!-- Loss terms (Source) -->
+  <text x="705" y="285" text-anchor="middle" font-family="Times New Roman, serif" font-size="13" font-style="italic" fill="#333">L<tspan baseline-shift="super" font-size="9">s</tspan><tspan baseline-shift="sub" font-size="9">fsl</tspan></text>
+  <text x="825" y="285" text-anchor="middle" font-family="Times New Roman, serif" font-size="13" font-style="italic" fill="#9b59b6">L<tspan baseline-shift="super" font-size="9">s</tspan><tspan baseline-shift="sub" font-size="9">inscl</tspan></text>
+  
+  <!-- Arrow from feature extractor to source domain block -->
+  <path d="M 610 350 L 640 200" stroke="#5cb85c" stroke-width="1.5" fill="none" marker-end="url(#arrowhead-green)"/>
+  
+  <!-- ==================== TARGET DOMAIN PROCESSING BLOCK ==================== -->
+  
+  <rect x="640" y="500" width="250" height="250" rx="8" fill="#e3f2fd" stroke="#4a90d9" stroke-width="2"/>
+  <text x="765" y="525" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">Target domain</text>
+  
+  <!-- Support features (Target) -->
+  <rect x="655" y="540" width="100" height="50" rx="4" fill="#bbdefb" stroke="#4a90d9" stroke-width="1"/>
+  <text x="705" y="570" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#333">Support</text>
+  <text x="705" y="582" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#333">features</text>
+  
+  <!-- Query features (Target) -->
+  <rect x="775" y="540" width="100" height="50" rx="4" fill="#90caf9" stroke="#4a90d9" stroke-width="1"/>
+  <text x="825" y="570" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#333">Query</text>
+  <text x="825" y="582" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#333">features</text>
+  
+  <!-- INSCL-T Module -->
+  <rect x="670" y="610" width="180" height="110" rx="5" fill="#f5f5f5" stroke="#999" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="760" y="630" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#9b59b6">INSCL-T</text>
+  
+  <!-- Pull/Push mechanics (Target) -->
+  <circle cx="710" cy="665" r="8" fill="#9b59b6"/>
+  <circle cx="750" cy="665" r="8" fill="#4a90d9"/>
+  <circle cx="810" cy="665" r="8" fill="#9b59b6"/>
+  
+  <!-- Pull arrows -->
+  <path d="M 718 665 L 742 665" stroke="#4a90d9" stroke-width="1.5" fill="none" marker-end="url(#arrowhead-blue)"/>
+  <text x="730" y="655" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#4a90d9">Pull</text>
+  
+  <!-- Push arrows -->
+  <path d="M 758 665 L 802 665" stroke="#e74c3c" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="780" y="655" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#e74c3c">Push</text>
+  
+  <text x="760" y="705" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">(Intra-domain)</text>
+  
+  <!-- Loss terms (Target) -->
+  <text x="705" y="735" text-anchor="middle" font-family="Times New Roman, serif" font-size="13" font-style="italic" fill="#333">L<tspan baseline-shift="super" font-size="9">t</tspan><tspan baseline-shift="sub" font-size="9">fsl</tspan></text>
+  <text x="825" y="735" text-anchor="middle" font-family="Times New Roman, serif" font-size="13" font-style="italic" fill="#9b59b6">L<tspan baseline-shift="super" font-size="9">t</tspan><tspan baseline-shift="sub" font-size="9">inscl</tspan></text>
+  
+  <!-- Arrow from feature extractor to target domain block -->
+  <path d="M 610 450 L 640 580" stroke="#4a90d9" stroke-width="1.5" fill="none" marker-end="url(#arrowhead-blue)"/>
+  
+  <!-- ==================== CRCA BLOCK (Right Column) ==================== -->
+  
+  <rect x="920" y="150" width="450" height="500" rx="10" fill="#f3e5f5" stroke="#9b59b6" stroke-width="2"/>
+  <text x="1145" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#9b59b6">CRCA</text>
+  <text x="1145" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#666">(Cross-domain Contrastive Alignment)</text>
+  
+  <!-- Source features cluster -->
+  <rect x="950" y="230" width="180" height="180" rx="8" fill="#e8f4e8" stroke="#5cb85c" stroke-width="1.5"/>
+  <text x="1040" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">Source features</text>
+  
+  <!-- Source feature points (triangles for unchanged, circles for changed) -->
+  <!-- Unchanged features (triangles - green) -->
+  <polygon points="980,290 990,310 970,310" fill="#5cb85c" stroke="#388e3c" stroke-width="1"/>
+  <polygon points="1020,320 1030,340 1010,340" fill="#5cb85c" stroke="#388e3c" stroke-width="1"/>
+  <polygon points="1060,280 1070,300 1050,300" fill="#5cb85c" stroke="#388e3c" stroke-width="1"/>
+  <polygon points="1000,360 1010,380 990,380" fill="#5cb85c" stroke="#388e3c" stroke-width="1"/>
+  <polygon points="1080,350 1090,370 1070,370" fill="#5cb85c" stroke="#388e3c" stroke-width="1"/>
+  
+  <!-- Changed features (circles - purple) -->
+  <circle cx="1000" cy="310" r="8" fill="#9b59b6" stroke="#7b1fa2" stroke-width="1"/>
+  <circle cx="1050" cy="340" r="8" fill="#9b59b6" stroke="#7b1fa2" stroke-width="1"/>
+  <circle cx="1090" cy="300" r="8" fill="#9b59b6" stroke="#7b1fa2" stroke-width="1"/>
+  <circle cx="970" cy="370" r="8" fill="#9b59b6" stroke="#7b1fa2" stroke-width="1"/>
+  
+  <!-- Target features cluster -->
+  <rect x="950" y="440" width="180" height="180" rx="8" fill="#e3f2fd" stroke="#4a90d9" stroke-width="1.5"/>
+  <text x="1040" y="465" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">Target features</text>
+  
+  <!-- Target feature points (triangles for unchanged, circles for changed) -->
+  <!-- Unchanged features (triangles - green) -->
+  <polygon points="980,500 990,520 970,520" fill="#5cb85c" stroke="#388e3c" stroke-width="1"/>
+  <polygon points="1020,530 1030,550 1010,550" fill="#5cb85c" stroke="#388e3c" stroke-width="1"/>
+  <polygon points="1060,490 1070,510 1050,510" fill="#5cb85c" stroke="#388e3c" stroke-width="1"/>
+  <polygon points="1000,570 1010,590 990,590" fill="#5cb85c" stroke="#388e3c" stroke-width="1"/>
+  <polygon points="1080,560 1090,580 1070,580" fill="#5cb85c" stroke="#388e3c" stroke-width="1"/>
+  
+  <!-- Changed features (circles - purple) -->
+  <circle cx="1000" cy="520" r="8" fill="#9b59b6" stroke="#7b1fa2" stroke-width="1"/>
+  <circle cx="1050" cy="550" r="8" fill="#9b59b6" stroke="#7b1fa2" stroke-width="1"/>
+  <circle cx="1090" cy="510" r="8" fill="#9b59b6" stroke="#7b1fa2" stroke-width="1"/>
+  <circle cx="970" cy="580" r="8" fill="#9b59b6" stroke="#7b1fa2" stroke-width="1"/>
+  
+  <!-- Align arrows between source and target -->
+  <path d="M 1040 410 L 1040 440" stroke="#9b59b6" stroke-width="2" fill="none" marker-end="url(#arrowhead-purple)"/>
+  <text x="1065" y="428" text-anchor="start" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#9b59b6">Align</text>
+  
+  <!-- Cross-domain alignment visualization -->
+  <rect x="1160" y="280" width="180" height="280" rx="8" fill="#fff" stroke="#ccc" stroke-width="1" stroke-dasharray="4,2"/>
+  <text x="1250" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#666">Alignment Space</text>
+  
+  <!-- Aligned feature points -->
+  <!-- Unchanged aligned (triangles) -->
+  <polygon points="1190,340 1200,360 1180,360" fill="#5cb85c" stroke="#388e3c" stroke-width="1"/>
+  <polygon points="1220,380 1230,400 1210,400" fill="#5cb85c" stroke="#388e3c" stroke-width="1"/>
+  <polygon points="1280,350 1290,370 1270,370" fill="#5cb85c" stroke="#388e3c" stroke-width="1"/>
+  <polygon points="1200,450 1210,470 1190,470" fill="#5cb85c" stroke="#388e3c" stroke-width="1"/>
+  <polygon points="1260,420 1270,440 1250,440" fill="#5cb85c" stroke="#388e3c" stroke-width="1"/>
+  <polygon points="1300,480 1310,500 1290,500" fill="#5cb85c" stroke="#388e3c" stroke-width="1"/>
+  
+  <!-- Changed aligned (circles) -->
+  <circle cx="1200" cy="390" r="8" fill="#9b59b6" stroke="#7b1fa2" stroke-width="1"/>
+  <circle cx="1250" cy="360" r="8" fill="#9b59b6" stroke="#7b1fa2" stroke-width="1"/>
+  <circle cx="1290" cy="410" r="8" fill="#9b59b6" stroke="#7b1fa2" stroke-width="1"/>
+  <circle cx="1220" cy="490" r="8" fill="#9b59b6" stroke="#7b1fa2" stroke-width="1"/>
+  <circle cx="1270" cy="520" r="8" fill="#9b59b6" stroke="#7b1fa2" stroke-width="1"/>
+  
+  <!-- Legend -->
+  <rect x="1160" y="560" width="180" height="70" rx="5" fill="#f5f5f5" stroke="#999" stroke-width="1"/>
+  <text x="1250" y="580" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#333">Legend</text>
+  
+  <!-- Changed features legend -->
+  <circle cx="1180" cy="600" r="6" fill="#9b59b6" stroke="#7b1fa2" stroke-width="1"/>
+  <text x="1195" y="604" text-anchor="start" font-family="Arial, sans-serif" font-size="10" fill="#333">Changed features</text>
+  
+  <!-- Unchanged features legend -->
+  <polygon points="1180,615 1186,625 1174,625" fill="#5cb85c" stroke="#388e3c" stroke-width="1"/>
+  <text x="1195" y="624" text-anchor="start" font-family="Arial, sans-serif" font-size="10" fill="#333">Unchanged features</text>
+  
+  <!-- Arrows from domain blocks to CRCA -->
+  <path d="M 890 175 L 920 300" stroke="#5cb85c" stroke-width="2" fill="none" marker-end="url(#arrowhead-green)"/>
+  <path d="M 890 625 L 920 530" stroke="#4a90d9" stroke-width="2" fill="none" marker-end="url(#arrowhead-blue)"/>
+  
+  <!-- Final Loss term -->
+  <rect x="1070" y="660" width="150" height="40" rx="5" fill="#f3e5f5" stroke="#9b59b6" stroke-width="2"/>
+  <text x="1145" y="687" text-anchor="middle" font-family="Times New Roman, serif" font-size="16" font-style="italic" font-weight="bold" fill="#9b59b6">L<tspan baseline-shift="sub" font-size="11">crca</tspan></text>
+  
+  <!-- Title -->
+  <text x="700" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#333">Model Architecture</text>
+  
+</svg>
